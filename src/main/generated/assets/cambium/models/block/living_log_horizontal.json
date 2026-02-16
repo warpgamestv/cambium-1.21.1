@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "cambium:block/living_log_top",
+    "side": "cambium:block/living_log"
+  }
+}

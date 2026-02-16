@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "cambium:block/mineral_soil"
+    }
+  }
+}

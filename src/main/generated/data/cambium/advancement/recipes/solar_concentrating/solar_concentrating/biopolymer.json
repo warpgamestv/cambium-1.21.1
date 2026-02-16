@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_biocomposite_paste": {
+      "conditions": {
+        "items": [
+          {
+            "items": "cambium:biocomposite_paste"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "cambium:solar_concentrating/biopolymer"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_biocomposite_paste"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "cambium:solar_concentrating/biopolymer"
+    ]
+  }
+}

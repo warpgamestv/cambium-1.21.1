@@ -1,0 +1,19 @@
+{
+  "multipart": [
+    { "apply": { "model": "cambium:block/phloem_duct_core" } },
+
+    { "when": { "north": "normal" }, "apply": { "model": "cambium:block/phloem_duct_side" } },
+    { "when": { "east": "normal" },  "apply": { "model": "cambium:block/phloem_duct_side", "y": 90 } },
+    { "when": { "south": "normal" }, "apply": { "model": "cambium:block/phloem_duct_side", "y": 180 } },
+    { "when": { "west": "normal" },  "apply": { "model": "cambium:block/phloem_duct_side", "y": 270 } },
+    { "when": { "up": "normal" },    "apply": { "model": "cambium:block/phloem_duct_side", "x": 270 } },
+    { "when": { "down": "normal" },  "apply": { "model": "cambium:block/phloem_duct_side", "x": 90 } },
+
+    { "when": { "north": "extract" }, "apply": { "model": "cambium:block/phloem_duct_extract" } },
+    { "when": { "east": "extract" },  "apply": { "model": "cambium:block/phloem_duct_extract", "y": 90 } },
+    { "when": { "south": "extract" }, "apply": { "model": "cambium:block/phloem_duct_extract", "y": 180 } },
+    { "when": { "west": "extract" },  "apply": { "model": "cambium:block/phloem_duct_extract", "y": 270 } },
+    { "when": { "up": "extract" },    "apply": { "model": "cambium:block/phloem_duct_extract", "x": 270 } },
+    { "when": { "down": "extract" },  "apply": { "model": "cambium:block/phloem_duct_extract", "x": 90 } }
+  ]
+}

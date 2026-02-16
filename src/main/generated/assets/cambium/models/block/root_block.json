@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "cambium:block/root_block_top",
+    "side": "cambium:block/root_block"
+  }
+}

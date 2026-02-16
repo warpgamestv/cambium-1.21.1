@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "cambium:block/iron_fruit_stage0"
+    },
+    "age=1": {
+      "model": "cambium:block/iron_fruit_stage1"
+    },
+    "age=2": {
+      "model": "cambium:block/iron_fruit_stage2"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "minecraft:glass_pane"
+    },
+    "O": {
+      "item": "cambium:organic_ash"
+    },
+    "P": {
+      "item": "cambium:biopolymer"
+    }
+  },
+  "pattern": [
+    "OPO",
+    "PGP",
+    "OPO"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cambium:phloem_duct"
+  }
+}

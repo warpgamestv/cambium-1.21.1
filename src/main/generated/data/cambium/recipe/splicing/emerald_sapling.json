@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "tag": "c:gems/emerald"
+  },
+  "base": {
+    "item": "minecraft:oak_sapling"
+  },
+  "result": {
+    "count": 1,
+    "id": "cambium:emerald_sapling"
+  },
+  "template": {
+    "item": "cambium:organic_ash"
+  }
+}

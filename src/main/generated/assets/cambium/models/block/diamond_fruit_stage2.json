@@ -1,0 +1,6 @@
+{
+  "parent": "cambium:block/base_fruit_stage2",
+  "textures": {
+    "all": "cambium:block/base_fruit_stage2"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "values": [
+    "cambium:iron_leaves",
+    "cambium:gold_leaves",
+    "cambium:copper_leaves",
+    "cambium:diamond_leaves",
+    "cambium:emerald_leaves",
+    "cambium:redstone_leaves",
+    "cambium:lapis_leaves",
+    "cambium:biopolymer_leaves",
+    "cambium:vesperite_leaves"
+  ]
+}

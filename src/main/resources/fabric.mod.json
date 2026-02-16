@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "cambium",
+	"version": "${version}",
+	"name": "Cambium",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/cambium/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.warpgames.cambium.Cambium"
+		],
+		"client": [
+			"com.warpgames.cambium.CambiumClient"
+		],
+		"fabric-datagen": [
+			"com.warpgames.cambium.CambiumDataGenerator"
+		],
+		"jei_mod_plugin": [
+			"com.warpgames.cambium.compat.jei.CambiumJEIPlugin"
+		]
+	},
+	"mixins": [
+		"cambium.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

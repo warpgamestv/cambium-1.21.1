@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:copper_ingot"
+    },
+    "F": {
+      "item": "minecraft:furnace"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "P": {
+      "item": "cambium:biopolymer_casing"
+    }
+  },
+  "pattern": [
+    "GGG",
+    "CFC",
+    "PPP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cambium:solar_concentrator"
+  }
+}

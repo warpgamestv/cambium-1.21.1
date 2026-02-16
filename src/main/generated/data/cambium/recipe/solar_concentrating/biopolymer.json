@@ -1,0 +1,13 @@
+{
+  "type": "cambium:solar_concentrating",
+  "cookingtime": 75,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "cambium:biocomposite_paste"
+  },
+  "requires_lens": true,
+  "result": {
+    "count": 1,
+    "id": "cambium:biopolymer"
+  }
+}

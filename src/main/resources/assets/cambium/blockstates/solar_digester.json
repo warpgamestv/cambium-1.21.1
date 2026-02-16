@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "cambium:block/solar_digester" },
+    "facing=east":  { "model": "cambium:block/solar_digester", "y": 90 },
+    "facing=south": { "model": "cambium:block/solar_digester", "y": 180 },
+    "facing=west":  { "model": "cambium:block/solar_digester", "y": 270 }
+  }
+}

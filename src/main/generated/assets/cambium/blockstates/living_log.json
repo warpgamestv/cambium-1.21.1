@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "cambium:block/living_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "cambium:block/living_log"
+    },
+    "axis=z": {
+      "model": "cambium:block/living_log_horizontal",
+      "x": 90
+    }
+  }
+}

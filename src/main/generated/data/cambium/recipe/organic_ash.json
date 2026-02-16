@@ -1,0 +1,17 @@
+{
+  "type": "cambium:solar_digesting",
+  "byproduct": {
+    "count": 1,
+    "id": "cambium:organic_ash"
+  },
+  "chance": 0.25,
+  "cookingtime": 150,
+  "experience": 1.0,
+  "ingredient": {
+    "tag": "cambium:digestable"
+  },
+  "result": {
+    "count": 1,
+    "id": "cambium:organic_ash"
+  }
+}

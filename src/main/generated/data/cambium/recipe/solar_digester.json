@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:copper_ingot"
+    },
+    "C": {
+      "item": "minecraft:composter"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "L": {
+      "tag": "minecraft:logs"
+    }
+  },
+  "pattern": [
+    "GGG",
+    "BCB",
+    "LLL"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cambium:solar_digester"
+  }
+}

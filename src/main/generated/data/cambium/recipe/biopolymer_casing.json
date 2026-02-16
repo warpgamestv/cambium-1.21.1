@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:copper_ingot"
+    },
+    "L": {
+      "item": "cambium:solar_lens"
+    },
+    "P": {
+      "item": "cambium:biopolymer"
+    }
+  },
+  "pattern": [
+    "P P",
+    "LCL",
+    "P P"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cambium:biopolymer_casing"
+  }
+}

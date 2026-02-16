@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "top": "cambium:block/solar_digester_top",
+    "front": "cambium:block/solar_digester_front",
+    "side": "cambium:block/solar_digester_side"
+  }
+}

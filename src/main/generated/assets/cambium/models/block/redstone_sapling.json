@@ -1,0 +1,7 @@
+{
+  "parent": "cambium:block/tinted_cross_overlay",
+  "textures": {
+    "leaves": "cambium:block/sapling_leaves",
+    "stem": "cambium:block/sapling_stem"
+  }
+}
