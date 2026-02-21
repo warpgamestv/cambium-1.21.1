@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "cambium:item/photovoltaic_helmet"
+  }
+}

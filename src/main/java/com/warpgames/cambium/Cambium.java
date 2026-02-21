@@ -19,6 +19,8 @@ public class Cambium implements ModInitializer {
 		ModScreenHandlers.registerScreenHandlers();
 		ModRecipes.registerRecipes();
 		ModItemGroups.registerItemGroups();
+		ModNetworking.registerPayloads();
+		ModNetworking.registerServerReceivers();
 
 		LOGGER.info("Hello Fabric world!");
 	}

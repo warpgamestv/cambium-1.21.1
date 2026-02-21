@@ -1,0 +1,62 @@
+{
+    "multipart": [
+        {
+            "apply": {
+                "model": "cambium:block/mycelial_strand_core"
+            }
+        },
+        {
+            "when": {
+                "north": "connected"
+            },
+            "apply": {
+                "model": "cambium:block/mycelial_strand_side"
+            }
+        },
+        {
+            "when": {
+                "east": "connected"
+            },
+            "apply": {
+                "model": "cambium:block/mycelial_strand_side",
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "south": "connected"
+            },
+            "apply": {
+                "model": "cambium:block/mycelial_strand_side",
+                "y": 180
+            }
+        },
+        {
+            "when": {
+                "west": "connected"
+            },
+            "apply": {
+                "model": "cambium:block/mycelial_strand_side",
+                "y": 270
+            }
+        },
+        {
+            "when": {
+                "up": "connected"
+            },
+            "apply": {
+                "model": "cambium:block/mycelial_strand_side",
+                "x": 270
+            }
+        },
+        {
+            "when": {
+                "down": "connected"
+            },
+            "apply": {
+                "model": "cambium:block/mycelial_strand_side",
+                "x": 90
+            }
+        }
+    ]
+}

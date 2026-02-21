@@ -49,6 +49,7 @@ public class SolarDigesterRecipeBuilder implements RecipeBuilder {
         this.byproductChance = chance;
         return this;
     }
+
     public SolarDigesterRecipeBuilder requiresLens() {
         this.requiresLens = true;
         return this;
@@ -99,19 +100,25 @@ public class SolarDigesterRecipeBuilder implements RecipeBuilder {
                 this.byproductChance,
                 this.cookingTime,
                 this.experience,
-                this.requiresLens
-        );
+                this.requiresLens);
 
         output.accept(
                 recipeId,
                 recipe,
-                builder.build(recipeId.withPrefix("recipes/solar_digesting/"))
-        );
+                builder.build(recipeId.withPrefix("recipes/solar_digesting/")));
     }
 
     private void ensureValid(ResourceLocation id) {
         if (this.criteria.isEmpty()) {
             throw new IllegalStateException("No way of obtaining recipe " + id);
         }
+    }
+
+    @Override
+    public void save(RecipeOutput output) {
+        ResourceLocation itemId = BuiltInRegistries.ITEM.getKey(this.getResult());
+        ResourceLocation recipeId = ResourceLocation.fromNamespaceAndPath(itemId.getNamespace(),
+                "solar_digesting/" + itemId.getPath());
+        save(output, recipeId);
     }
 }

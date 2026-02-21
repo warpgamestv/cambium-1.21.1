@@ -73,7 +73,8 @@ public class SolarConcentratorRecipeBuilder implements RecipeBuilder {
         return this.output.getItem();
     }
 
-    // FIX: Override this to provide a unique path to prevent "Duplicate Recipe" errors
+    // FIX: Override this to provide a unique path to prevent "Duplicate Recipe"
+    // errors
     @Override
     public void save(RecipeOutput output) {
         ResourceLocation itemId = RecipeBuilder.getDefaultRecipeId(this.getResult());
@@ -96,14 +97,12 @@ public class SolarConcentratorRecipeBuilder implements RecipeBuilder {
                 this.output,
                 this.cookingTime,
                 this.experience,
-                this.requiresLens
-        );
+                this.requiresLens);
 
         output.accept(
                 recipeId,
                 recipe,
-                builder.build(recipeId.withPrefix("recipes/solar_concentrating/"))
-        );
+                builder.build(recipeId.withPrefix("recipes/solar_concentrating/")));
     }
 
     private void ensureValid(ResourceLocation id) {

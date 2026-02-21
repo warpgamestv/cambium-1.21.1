@@ -1,6 +1,9 @@
 {
   "values": [
     "cambium:living_log",
-    "cambium:root_block"
+    "cambium:root_block",
+    "cambium:mycelial_node",
+    "cambium:mycelial_strand",
+    "cambium:phloem_duct"
   ]
 }

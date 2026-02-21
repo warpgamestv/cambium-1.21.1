@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:copper_ingot"
+    },
+    "P": {
+      "item": "cambium:biopolymer_casing"
+    }
+  },
+  "pattern": [
+    "P P",
+    "C C"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cambium:photovoltaic_boots"
+  }
+}

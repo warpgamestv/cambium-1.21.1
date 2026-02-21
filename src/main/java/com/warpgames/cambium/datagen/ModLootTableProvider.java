@@ -18,10 +18,12 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         // 1. Static Blocks
-        dropSelf(ModBlocks.ROOT_BLOCK);
+        dropOther(ModBlocks.ROOT_BLOCK, ModBlocks.LIVING_LOG);
         dropSelf(ModBlocks.MINERAL_SOIL);
         dropSelf(ModBlocks.LIVING_LOG);
         dropSelf(ModBlocks.GRAVITROPIC_NODE);
+        dropSelf(ModBlocks.MYCELIAL_NODE);
+        dropSelf(ModBlocks.MYCELIAL_STRAND);
         dropSelf(ModBlocks.PHLOEM_DUCT);
 
         // 2. Dynamic Blocks
@@ -38,8 +40,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                 add(tree.getLeaves(), block -> createLeavesDrops(
                         block,
                         tree.getSapling(),
-                        0.05f, 0.0625f, 0.083333336f, 0.1f
-                ));
+                        0.05f, 0.0625f, 0.083333336f, 0.1f));
             }
 
             if (tree.getFruit() != null) {

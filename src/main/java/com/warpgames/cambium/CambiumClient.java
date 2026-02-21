@@ -79,5 +79,21 @@ public class CambiumClient implements ClientModInitializer {
         // --- Register Screens ---
         MenuScreens.register(ModScreenHandlers.SOLAR_DIGESTER_MENU, SolarDigesterScreen::new);
         MenuScreens.register(ModScreenHandlers.SOLAR_CONCENTRATOR_SCREEN_HANDLER, SolarConcentratorScreen::new);
+        MenuScreens.register(ModScreenHandlers.MYCELIAL_NODE_MENU,
+                com.warpgames.cambium.screen.MycelialNodeScreen::new);
+
+        // Mycelial Strand Render Layer
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MYCELIAL_STRAND, RenderType.cutout());
+
+        // --- Client Networking ---
+        net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking.registerGlobalReceiver(
+                com.warpgames.cambium.network.MycelialNetworkSyncPayload.ID,
+                (payload, context) -> {
+                    context.client().execute(() -> {
+                        if (context.client().screen instanceof com.warpgames.cambium.screen.MycelialNodeScreen screen) {
+                            screen.setNetworkItems(payload.items());
+                        }
+                    });
+                });
     }
 }

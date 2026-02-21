@@ -10,6 +10,7 @@ import net.minecraft.core.HolderLookup;
 
 import java.util.concurrent.CompletableFuture;
 
+@SuppressWarnings("null")
 public class ModEnLangProvider extends FabricLanguageProvider {
 
     public ModEnLangProvider(FabricDataOutput dataOutput, CompletableFuture<HolderLookup.Provider> registryLookup) {
@@ -20,16 +21,18 @@ public class ModEnLangProvider extends FabricLanguageProvider {
     public void generateTranslations(HolderLookup.Provider registryLookup, TranslationBuilder builder) {
         // --- Item Groups ---
         builder.add("itemGroup.cambium", "Cambium");
+        builder.add("itemGroup.cambium_items", "Cambium Items");
         builder.add("itemGroup.cambium_trees", "Cambium Resource Trees");
 
-        // --- Blocks ---
-        // Registering the block automatically handles the Item name for BlockItems
+        // --- Blocks (Static) ---
         builder.add(ModBlocks.SOLAR_DIGESTER, "Solar Digester");
         builder.add(ModBlocks.SOLAR_CONCENTRATOR, "Solar Concentrator");
         builder.add(ModBlocks.MINERAL_SOIL, "Mineral Soil");
         builder.add(ModBlocks.LIVING_LOG, "Living Log");
         builder.add(ModBlocks.ROOT_BLOCK, "Root Block");
         builder.add(ModBlocks.GRAVITROPIC_NODE, "Gravitropic Node");
+        builder.add(ModBlocks.MYCELIAL_NODE, "Mycelial Node");
+        builder.add(ModBlocks.MYCELIAL_STRAND, "Mycelial Strand");
         builder.add(ModBlocks.PHLOEM_DUCT, "Phloem Duct");
 
         // --- Items ---
@@ -39,6 +42,10 @@ public class ModEnLangProvider extends FabricLanguageProvider {
         builder.add(ModItems.BIOPOLYMER, "Biopolymer");
         builder.add(ModItems.BIOPOLYMER_CASING, "Biopolymer Casing");
         builder.add(ModItems.GRAFTING_TOOL, "Grafting Tool");
+        builder.add(ModItems.PHOTOVOLTAIC_HELMET, "Photovoltaic Helmet");
+        builder.add(ModItems.PHOTOVOLTAIC_CHESTPLATE, "Photovoltaic Chestplate");
+        builder.add(ModItems.PHOTOVOLTAIC_LEGGINGS, "Photovoltaic Leggings");
+        builder.add(ModItems.PHOTOVOLTAIC_BOOTS, "Photovoltaic Boots");
 
         // --- Dynamic Resource Tree Support ---
         for (ResourceTree tree : TreeRegistry.TREES) {
@@ -54,6 +61,8 @@ public class ModEnLangProvider extends FabricLanguageProvider {
         // --- UI / Messages ---
         builder.add("container.solar_digester", "Solar Digester");
         builder.add("container.solar_concentrator", "Solar Concentrator");
+        builder.add("container.mycelial_node", "Mycelial Network");
         builder.add("jei.cambium.solar_digesting", "Solar Digesting");
         builder.add("jei.cambium.solar_concentrating", "Solar Concentrating");
-    }}
+    }
+}

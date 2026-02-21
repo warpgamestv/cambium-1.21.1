@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "cambium:organic_ash"
+    },
+    "B": {
+      "item": "cambium:biopolymer_casing"
+    }
+  },
+  "pattern": [
+    " A ",
+    "ABA",
+    " A "
+  ],
+  "result": {
+    "count": 6,
+    "id": "cambium:mycelial_strand"
+  }
+}
